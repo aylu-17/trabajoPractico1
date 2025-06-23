@@ -3,37 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/tp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
     <header>
-      <h3>Cabañas SQL</h3>
-      <nav>
-        <a href="#Conocenos"> <h3>El complejo</h3></a>
-        <a href="#Ubicacion"><h3>Ubicacion</h3></a>
-        <a href="#cabanas"><h3>Las Cabañas</h3></a>
-        <a href="#consultas"><h3>Consultas</h3></a>
-      </nav>
+      <!-- Encabezado  -->
+      <div class="barra-superior">
+        <div class="logo">Cabaña sql</div>
+          <div class="menu">
+            <a href="#Conocenos ">El Complejo</a>
+            <a href="#Ubicacion">Ubicación</a>
+            <a href="#cabanas">Las Cabañas</a>
+            <a href="#consultas">Consultas</a>
+          </div>
+      </div>
     </header>
+
     <main>
-      <h1>Cabañas SQL</h1>
-      <h3>Descubri el poder de las relaciones</h3>
-      <a href="#Conocenos"><h3>Conocenos</h3></a>
-      <a href="#cabanas"><h3>Cabañas</h3></a>
-      <img
-        src="data:image/jpeg;base64,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"
+      <!-- principal  -->
+      <div class="imagen">
+        <img
+        src="./public/ciudad.png"
         alt="san martin de los andes"
         width="500"
-        height="200"
-      />
+        height="200"/>
+        <div class="principal">
+          <p>Cabañas SQL</p>
+          <div class="subtitulo"><p>Descubri el poder de las Relaciones</p></div>
+          <div class="botones">
+            <a href="#Conocenos" class="boton-rojo">Conócenos</a>
+            <a href="#cabanas" class="boton-transparente">Cabañas</a>
+          </div>
+        </div>
+      </div>
       <section id="Conocenos" class="Conocenos">
         <div>
           <h3>Conoce nuestro complejo</h3>
-          Ubicado en una calle cerrada contra la montaña,<br />
+          <p><strong>Ubicado en una calle cerrada contra la montaña,<br />
           a una cuadra del lago Lacar y a cuatro del<br />
           centro de la ciudad, es el lugar ideal para<br />
           descansar estando cerca de todo.
-          <p><strong>Contamos además con:</strong></p>
+          Contamos además con:</strong></p>
         </div>
         <div>
           <img
@@ -83,7 +95,7 @@
           />
           <strong>Solarium</strong>
         </div>
-        <img
+        <div class="fotoscabaña"><img
           src="/public/1.png"
           alt="fuera de Cabaña"
           width="300"
@@ -93,284 +105,297 @@
         <img src="/public/3.png" alt="patio" width="300" height="250" />
         <img src="/public/4.png" alt="entrada" width="300" height="250" />
         <img src="/public/5.png" alt="patio" width="300" height="250" />
-        <img src="/public/6.png" alt="afuera Cabaña" width="300" height="250" />
+        <img src="/public/6.png" alt="afuera Cabaña" width="300" height="250" /></div>
+        
       </section>
       <section id="Ubicacion" class="Ubicacion">
         <h1>Conoce nuestra excelente Ubicación</h1>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.0732281985083!2d-71.3576200248581!3d-40.16292327191389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96110e6d9ab4ef8d%3A0x9c21c7107a633826!2sCnel.%20D%C3%ADaz%201156%2C%20Q8370%20San%20Mart%C3%ADn%20de%20los%20Andes%2C%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1747266884841!5m2!1ses!2sar"
-          width="400"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <h3>
-          Coronel Diaz 1156
-          <p>San martin de los andes</p>
-        </h3>
-
-        <div>
-          <h2>Vas a estar cerca de todo:</h2>
-          <p>Distancia desde el complejo</p>
+       <div class="contenedor"> 
+        <div class="mapa">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.473106722126!2d-71.3549067!3d-40.1572236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9611ca1a5e3b4f7f%3A0x1a7f8d05e9a7f015!2sCoronel%20D%C3%ADaz%201156%2C%20San%20Mart%C3%ADn%20de%20los%20Andes%2C%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1687139328294!5m2!1ses!2sar" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <p>Coronel Diaz 1156 </br>
+          San martin de los andes</p>
+        </div>
+        <div class="tarjeta">
+          <p>Vas a estar cerca de todo:</p>
+          <p class="subtitulo">Distancia desde el complejo</p>
           <ul>
-            <li>5 minutos de la costanera del lago Lacar.</li>
-            <li>10 minutos del centro del centro cívico.</li>
-            <li>30 minutos del cerro Chapelco.</li>
-            <li>5 minutos del inicio de la ruta de 7 lagos.</li>
+            <p>5 minutos de la costanera del lago Lacar.</p>
+            <p>10 minutos del centro del centro cívico.</p>
+            <p>30 minutos del cerro Chapelco.</p>
+            <p>5 minutos del inicio de la ruta de 7 lagos.</p>
           </ul>
         </div>
       </section>
-      <section id="cabanas" class="cabanas">
-        <h1>Descubri el placer de descansar como si estuvieras en tu casa</h1>
-        <!-- aca va a ver info de la cabaña  -->
-        <!-- es semantico -->
-        <article>
-          <div class="cardHeader">
+
+    <!--Cuadros de Cabaña    -->
+
+    <section id="cabanas" class="cabanas">
+      <h1>Descubri el placer de descansar como si estuvieras en tu casa</h1>
+      <!-- aca va a ver info de la cabaña  -->
+      <!-- es semantico -->
+      <div class="container-principal">
+        <div class="casa">
+          <article>
+            <div class="cardHeader">
             <img
               src="/public/1.B.png"
               alt="escalera-mesita"
-              width="260"
-              height="200"
+              width="280"
+              height="280d"
             />
             <img
               src="/public/1.A.png"
               alt="escalera-bajar"
-              width="260"
-              height="260"
+              width="280"
+              height="280"
             />
-            <img src="/public/2.A.png" alt="cama" width="260" height="260" />
-            <img src="/public/3.A.png" alt="baño" width="260" height="260" />
-            <img src="/public/2.A.png" alt="cama" width="260" height="260" />
-          </div>
-          <div class="main">
-            <h2>Cabañas para 2 y 3 personas</h2>
-            <p>
-              Un refugio ideal para parejas o pequeñas familias que buscan
-              tranquilidad y confort
-            </p>
-            <div>
-              <img
-                src="/public/a.png"
-                alt="metros"
-                width="20"
-                height="20"
-              /><text>20 m2</text>
-              <img src="/public/b.png" alt="wifi" width="20" height="20" />
-              <text>wifi de alta velocidad</text>
+            <img src="/public/2.A.png" alt="cama" width="280" height="280" />
+            <img src="/public/3.A.png" alt="baño" width="280" height="280" />
+            <img src="/public/2.A.png" alt="cama" width="280" height="280" />
             </div>
-            <div>
-              <text>Ambiente climatizado</text>
-              <img
-                src="/public/c.png"
-                alt="cocina"
-                width="20"
-                height="20"
-              /><text>Cocina completa</text>
+            <div class="main">
+              <h2>Cabañas para 2 y 3 personas</h2>
+              <p>
+                Un refugio ideal para parejas o pequeñas familias <br> que buscan
+                tranquilidad y confort
+              </p>
             </div>
-            <div>
-              <img
-                src="/public/d.png"
-                alt="caja fuerte "
-                width="20"
-                height="20"
-              />
-              <text>Caja de seguridad</text>
-              <img src="/public/e.png" alt="secador" width="20" height="20" />
-              <text>Caja de seguridad</text>
+            <div class="container">
+              <div class="columna">
+                <div class="item">
+                  <img src="public/a.png" alt="20 m2" />
+                  <span>20 m2</span>
+                </div>
+                <div class="item">
+                  <span>Ambiente climatizado</span>
+                </div>
+                <div class="item">
+                  <img src="/public/d.png" alt="Caja de seguridad" />
+                  <span>Caja de seguridad</span>
+                </div>
+              </div>
+              <div class="columna">
+                <div class="item">
+                  <img src="/public/b.png" alt="wifi" />
+                  <span>wifi de alta velocidad</span>
+                </div>
+                <div class="item">
+                  <img src="/public/c.png" alt="Cocina completa" />
+                  <span>Cocina completa</span>
+                </div>
+                <div class="item">
+                  <img src="/public/e.png" alt="Caja de seguridad" />
+                  <span>Caja de seguridad</span>
+                </div>
+              </div>  
             </div>
-          </div>
-          <div class="CardFooter">
-            <a href="./pages/cabana-details.html">ver detalles</a>
-            <a href="#consultas">Consultar</a>
-          </div>
-        </article>
-        <article>
-          <div class="cardHeader">
+            <div class="CardFooter">
+              <a href="./pages/cabana-details.html">ver detalles</a>
+              <a href="#consultas"><strong>Consultar</strong></a>
+            </div>
+          </article>
+        </div>
+        <div class="casa">
+          <article>
+            <div class="cardHeader">
             <img
               src="/public/1.B.png"
               alt="escalera-mesita"
-              width="260"
-              height="200"
+              width="280"
+              height="280d"
             />
             <img
               src="/public/1.A.png"
               alt="escalera-bajar"
-              width="260"
-              height="260"
+              width="280"
+              height="280"
             />
-            <img src="/public/2.A.png" alt="cama" width="260" height="260" />
-            <img src="/public/3.A.png" alt="baño" width="260" height="260" />
-            <img src="/public/2.A.png" alt="cama" width="260" height="260" />
-          </div>
-          <div class="main">
-            <h2>Cabañas para 2 y 3 personas</h2>
-            <p>
-              Un refugio ideal para parejas o pequeñas familias que buscan
-              tranquilidad y confort
-            </p>
-            <div>
-              <img
-                src="/public/a.png"
-                alt="metros"
-                width="20"
-                height="20"
-              /><text>20 m2</text>
-              <img src="/public/b.png" alt="wifi" width="20" height="20" />
-              <text>wifi de alta velocidad</text>
+            <img src="/public/2.A.png" alt="cama" width="280" height="280" />
+            <img src="/public/3.A.png" alt="baño" width="280" height="280" />
+            <img src="/public/2.A.png" alt="cama" width="280" height="280" />
             </div>
-            <div>
-              <text>Ambiente climatizado</text>
-              <img
-                src="/public/c.png"
-                alt="cocina"
-                width="20"
-                height="20"
-              /><text>Cocina completa</text>
+            <div class="main">
+              <h2>Cabañas para 2 y 3 personas</h2>
+              <p>
+                Un refugio ideal para parejas o pequeñas familias <br> que buscan
+                tranquilidad y confort
+              </p>
             </div>
-            <div>
-              <img
-                src="/public/d.png"
-                alt="caja fuerte "
-                width="20"
-                height="20"
-              />
-              <text>Caja de seguridad</text>
-              <img src="/public/e.png" alt="secador" width="20" height="20" />
-              <text>Caja de seguridad</text>
+            <div class="container">
+              <div class="columna">
+                <div class="item">
+                  <img src="public/a.png" alt="20 m2" />
+                  <span>20 m2</span>
+                </div>
+                <div class="item">
+                  <span>Ambiente climatizado</span>
+                </div>
+                <div class="item">
+                  <img src="/public/d.png" alt="Caja de seguridad" />
+                  <span>Caja de seguridad</span>
+                </div>
+              </div>
+              <div class="columna">
+                <div class="item">
+                  <img src="/public/b.png" alt="wifi" />
+                  <span>wifi de alta velocidad</span>
+                </div>
+                <div class="item">
+                  <img src="/public/c.png" alt="Cocina completa" />
+                  <span>Cocina completa</span>
+                </div>
+                <div class="item">
+                  <img src="/public/e.png" alt="Caja de seguridad" />
+                  <span>Caja de seguridad</span>
+                </div>
+              </div>  
             </div>
-          </div>
-          <div class="CardFooter">
-            <a href="./pages/cabana-details.html">ver detalles</a>
-            <a href="#consultas">Consultar</a>
-          </div>
-        </article>
-        <article>
-          <div class="cardHeader">
+            <div class="CardFooter">
+              <a href="./pages/cabana-details.html">ver detalles</a>
+              <a href="#consultas"><strong>Consultar</strong></a>
+            </div>
+          </article>
+        </div>
+        
+        <div class="casa">
+            <div class="cardHeader">
             <img
               src="/public/1.B.png"
               alt="escalera-mesita"
-              width="260"
-              height="200"
+              width="280"
+              height="280d"
             />
-            <img src="/public/2.A.png" alt="cama" width="260" height="260" />
-            <img src="/public/3.A.png" alt="cama" width="260" height="260" />
-            <img src="/public/4.A.png" alt="baño" width="260" height="260" />
-            <img src="/public/2.A.png" alt="cama" width="260" height="260" />
-          </div>
-          <div class="main">
-            <h2>Cabañas para 2 y 3 personas</h2>
-            <p>
-              Un refugio ideal para parejas o pequeñas familias que buscan
-              tranquilidad y confort
-            </p>
-            <div>
-              <img
-                src="/public/a.png"
-                alt="metros"
-                width="20"
-                height="20"
-              /><text>20 m2</text>
-              <img src="/public/b.png" alt="wifi" width="20" height="20" />
-              <text>wifi de alta velocidad</text>
+            <img
+              src="/public/1.A.png"
+              alt="escalera-bajar"
+              width="280"
+              height="280"
+            />
+            <img src="/public/2.A.png" alt="cama" width="280" height="280" />
+            <img src="/public/3.A.png" alt="baño" width="280" height="280" />
+            <img src="/public/2.A.png" alt="cama" width="280" height="280" />
             </div>
-            <div>
-              <text>Ambiente climatizado</text>
-              <img
-                src="/public/c.png"
-                alt="cocina"
-                width="20"
-                height="20"
-              /><text>Cocina completa</text>
+            <div class="main">
+              <h2>Cabañas para 2 y 3 personas</h2>
+              <p>
+                Un refugio ideal para parejas o pequeñas familias <br> que buscan
+                tranquilidad y confort
+              </p>
             </div>
-            <div>
-              <img
-                src="/public/d.png"
-                alt="caja fuerte "
-                width="20"
-                height="20"
-              />
-              <text>Caja de seguridad</text>
-              <img src="/public/e.png" alt="secador" width="20" height="20" />
-              <text>Caja de seguridad</text>
+            <div class="container">
+              <div class="columna">
+                <div class="item">
+                  <img src="public/a.png" alt="20 m2" />
+                  <span>20 m2</span>
+                </div>
+                <div class="item">
+                  <span>Ambiente climatizado</span>
+                </div>
+                <div class="item">
+                  <img src="/public/d.png" alt="Caja de seguridad" />
+                  <span>Caja de seguridad</span>
+                </div>
+              </div>
+              <div class="columna">
+                <div class="item">
+                  <img src="/public/b.png" alt="wifi" />
+                  <span>wifi de alta velocidad</span>
+                </div>
+                <div class="item">
+                  <img src="/public/c.png" alt="Cocina completa" />
+                  <span>Cocina completa</span>
+                </div>
+                <div class="item">
+                  <img src="/public/e.png" alt="Caja de seguridad" />
+                  <span>Caja de seguridad</span>
+                </div>
+              </div>  
             </div>
-          </div>
-          <div class="CardFooter">
-            <a href="./pages/cabana-details.html">ver detalles</a>
-            <a href="#consultas">Consultar</a>
-          </div>
-        </article>
-      </section>
-      <section id="consultas" class="consultas">
-        <h2>Consulta sobre disponibilidad</h2>
-
-        <form>
-          <div>
-            <label>Fecha de ingreso</label>
-            <input type="text" placeholder="DD-MM-AA" />
-
-            <label>Fecha de salida</label>
-            <input type="text" placeholder="DD-MM-AA" />
-
-            <label>Adultos</label>
-            <input type="number" value="2" />
-
-            <label>Menores</label>
-            <input type="number" value="1" />
-          </div>
-          <p>
-            <div>
-              <label>Nombre Completo</label>
-              <input type="text" placeholder="Ingrese su nombre" />
-
-              <label>Telefono</label>
-              <input type="text" placeholder="Ingrese su telefono" />
-
-              <label>Email</label>
-              <input type="text" placeholder="Ingrese su email" />
+            <div class="CardFooter">
+              <a href="./pages/cabana-details.html">ver detalles</a>
+              <a href="#consultas"><strong>Consultar</strong></a>
             </div>
-          </p>
+        </div>
+      </div>  
+     <!-- Menu de consultas  -->
+    </section >
+    <section id="consultas" class="consultas">
+      <h1>Consultas sobre Disponibilidad </h1>
+      <form>
+        <div class="campo">
+          <label for="ingreso">Fecha de ingreso</label>
+          <input id="ingreso" type="text" placeholder="DD-MM-AA" />
+        </div>
+
+        <div class="campo">
+          <label for="salida">Fecha de salida</label>
+          <input id="salida" type="text" placeholder="DD-MM-AA" />
+        </div>
+
+        <div class="campo">
+          <label for="adultos">Adultos</label>
+          <input id="adultos" type="number" placeholder="2" />
+        </div>
+
+        <div class="campo">
+          <label for="menores">Menores</label>
+          <input id="menores" type="number" placeholder="1" />
+        </div>
+
+        <div class="campo">
+          <label for="nombre">Nombre Completo</label>
+          <input id="nombre" type="text" placeholder="Ingrese su nombre" />
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" type="tel" placeholder="Ingrese su teléfono" />
+        </div>
+
+        <div class="campo">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Ingrese su email" />
+        </div>
+
+        <div class="campo mensaje">
           <label>Mensaje</label>
-          <textarea
-            placeholder="Ingrese su consulta"
-            rows="4"
-            cols="50"
-          ></textarea>
-          <button type="submit">Consultar</button>
-        </form>
-      </section>
-      <footer>
-        <p>
-          <img src="/public/sql.png" alt="base de datos "  width="100" height="100">
-          <p>CABAÑAS SQL</p>
-          <h2>Contacto</h2>
-          <div>
-            <tr>
-              <td><img src="https://img.icons8.com/ios-filled/30/000000/new-post.png" alt="Email"></td>
-              <td>Cabañas@sma.com.ar</td>
-            </tr>
-          </div>
-          <div>
-            <tr>
-              <td><img src="https://img.icons8.com/ios-filled/30/000000/phone.png" alt="Teléfono"></td>
-              <td>2944 -202020</td>
-            </tr>
-          </div>
-          <div>
-            <tr>
-              <td><img src="https://img.icons8.com/ios-filled/30/000000/whatsapp.png" alt="WhatsApp"></td>
-              <td>2944 -202020</td>
-            </tr>
-          </div>
-          <div>
-            <tr>
-              <td><img src="https://img.icons8.com/ios-filled/30/000000/marker.png" alt="Ubicación"></td>
-              <td>Coronel Diaz 1156</td>
-            </tr>
-          </div>
-      </p>
-      </footer>
-    </main>
+          <textarea rows="4"  placeholder="ingrese su consulta "></textarea>
+        </div>
+        <button type="submit">Consultar</button>
+      </form>
+    </section>
+    <section class="seccion-contacto">
+      <div class="columna-izquierda">
+        <img src="/public/base de datos.png" alt="Base de datos" class="logo_abajo">
+        <p class="marca">Cabaña SQL</p>
+      </div>
+      <div class="divisor"></div>
+      <div class="columna-derecha">
+        <h2>Contacto</h2 >
+        <div class="info">
+          <img src="https://img.icons8.com/ios-filled/30/new-post.png" alt="Email">
+          <span>Cabañas@sma.com.ar</span>
+        </div>
+        <div class="info">
+          <img src="https://img.icons8.com/ios-filled/30/phone.png" alt="Teléfono">
+          <span>2944 -202020</span>
+        </div>
+        <div class="info">
+          <img src="https://img.icons8.com/ios-filled/30/whatsapp.png" alt="WhatsApp">
+          <span>2944 -202020</span>
+        </div>
+        <div class="info">
+          <img src="https://img.icons8.com/ios-filled/30/marker.png" alt="Ubicación">
+          <span>Coronel Diaz 1156</span>
+        </div>
+      </div>
+    </section>
+  </main>
   </body>
 </html>

@@ -4,40 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>detalles</title>
+    <link rel="stylesheet" href="/styles/pagina.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Cabañas para 2 Y 3 personas</h1>
-    <img src="/public/1.A.png" alt="escalera-bajar" width="500" height="350" />
-    <div>
-      <img src="/public/2.A.png" alt="cama" width="300" height="200" />
-      <img src="/public/3.A.png" alt="cama" width="300" height="200" />
-    </div>
-    <div>
-      <img src="/public/4.A.png" alt="baño" width="300" height="200" />
-      <img src="/public/2.A.png" alt="cama" width="300" height="200" />
-    </div>
-    <h2>La cabaña es ideal para 2 o 3 personas</h2>
-    <p><h3>¿Qué vas a encontrar en la cabaña?</h3><strong></strong></p>
-    <p>
-      <strong><h3>En nuestra cabaña vas a encontrar cocina y vajilla completa, heladera,
-        microondas, 2 TVs pantalla plana, baño con ducha (la cabaña para 5
-        personas cuenta con dos baños, uno con bañera), secador de cabello,
-        cofre de seguridad, WiFi, ropa blanca y servicio de mucama
-        diario.</h3></strong
-      >
-    </p>
-    <p>
-        <strong>
-            <h3>
-                <dl>
-                    <dt>Servicios Opcionales</dt>
-                    <li>Lavanderia</li>
-                    <li>Uso de quincho</li>
-                    <li>Traslados</li>
-                    <li>Baby sitter</li>
-                </dl>
-            </h3>
-        </strong>
-    </p>
+      <header>
+        <!-- Encabezado  -->
+        <div class="barra-superior">
+          <div class="logo"><img src="/public/base de datos.png" alt="base de datps" width="40">Cabaña sql</div>
+            <div class="menu">
+              <a href="../index.html#Conocenos">El Complejo</a>
+              <a href="../index.html#Ubicacion">Ubicación</a>
+              <a href="../index.html#cabanas">Las Cabañas</a>
+              <a href="../index.html#consultas">Consultas</a>
+            </div>
+        </div>
+      </header>
+      <main>
+      <section class="galeria">
+        <h1>Cabañas para 2 y 3 personas</h1>
+        <div class="galeria-contenido">
+          <div class="foto-principal">
+            <img src="/public/1.A.png" alt="escalera-bajar">
+          </div>
+
+          <div class="fotos-secundarias">
+            <img src="/public/2.A.png" alt="cama">
+            <img src="/public/3.A.png" alt="cama">
+            <img src="/public/4.A.png" alt="baño">
+            <img src="/public/2.A.png" alt="cama">
+          </div>
+        </div>
+      </section>
+      <section class="descripcion-cabania">
+        <h2>La cabaña es ideal para 2 o 3 personas</h2>
+        <h3>¿Qué vas a encontrar en la cabaña?</h3>
+        <p>
+          En nuestra cabaña vas a encontrar cocina y vajilla completa, heladera, microondas, 2 TVs pantalla plana, baño con ducha 
+          (la cabaña para 5 personas cuenta con dos baños, uno con bañera), secador de cabello, cofre de seguridad, WiFi, 
+          ropa blanca y servicio de mucama diario.
+        </p>
+        <h3>Servicios Opcionales</h3>
+        <ul>
+          <li>Lavandería</li>
+          <li>Uso de quincho</li>
+          <li>Traslados</li>
+          <li>Baby sitter</li>
+        </ul>
+      </section>
+      <section class="seccion-contacto">
+        <div class="columna-izquierda">
+          <p class="marca">SQL</p>
+        </div>
+        <div class="divisor"></div>
+        <div class="columna-derecha">
+          <p>Contacto</p>
+          <div class="fila">
+            <img src="https://img.icons8.com/ios-filled/30/new-post.png" alt="Email">
+            <span>Cabañas@sma.com.ar</span>
+            <img src="https://img.icons8.com/ios-filled/30/phone.png" alt="Teléfono">
+            <span>2944 -202020</span>
+          </div>
+          <div class="fila">
+            <img src="https://img.icons8.com/ios-filled/30/whatsapp.png" alt="WhatsApp">
+            <span>2944 -202020</span>
+            <img src="https://img.icons8.com/ios-filled/30/marker.png" alt="Ubicación">
+            <span>Coronel Diaz 1156</span>
+          </div>
+        </div>      
+      </section>
+    </main>
   </body>
 </html>

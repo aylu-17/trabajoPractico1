@@ -1,0 +1,165 @@
+body{
+  margin: 0px;
+  background-color: #f5f5f5;
+}
+.barra-superior {
+  background-color: rgba(216, 13, 13, 0.866); /* rojo similar */
+  color: white;
+  padding: 2px 30px;
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  align-items: center;
+
+}
+
+.logo {
+  font-family: 'Lovers Quarrel', cursive; /* Fuente manuscrita similar */
+  font-size: 40px;
+  display: flex;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+/*  */
+.galeria {
+  padding: 20px 60px;
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+
+.galeria h1 {
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.galeria-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.foto-principal {
+  flex: 1 1 50%;
+}
+
+.foto-principal img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.fotos-secundarias {
+  flex: 1 1 45%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.fotos-secundarias img {
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* descripcion de cabaña  */
+.descripcion-cabania {
+  background-color: #f2f2f2;
+  margin-bottom: 0px;
+  font-family: sans-serif;
+  line-height: 25px;  
+  padding: 50px;
+  padding-top: 0; 
+
+}
+
+
+.descripcion-cabania h2 {
+  font-size: 30px;
+  color: #111;
+  margin: 0 0 10px 0; 
+}
+
+.descripcion-cabania h3 {
+  font-size: 1.3rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.descripcion-cabania p {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 500;
+}
+
+.descripcion-cabania ul {
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #222;
+  margin-top: 10px;
+}
+
+img {
+  display: block;
+  margin-bottom: 0;
+}
+
+/* FOOTER */
+.seccion-contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a53838;
+  padding: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.columna-derecha {
+  flex: 3;
+}
+.columna-izquierda {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marca {
+  font-family: 'Lovers Quarrel', cursive;
+  font-size: 100px;
+  margin: 0;
+  color: white;
+}
+
+.divisor {
+  width: 2px;
+  height: 120px;
+  background-color: white;
+  margin: 0 30px;
+}
+
+.columna-derecha p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.fila {
+  display: flex;
+  align-items:center;
+  align-content: space-between;
+  gap: 15px;
+  margin: 12px 0;
+  font-size: 1.3rem;
+}
